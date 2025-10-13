@@ -120,3 +120,9 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Evita que el sitio se mueva al abrir menús o modales de Radix */
+body[data-radix-scroll-lock] {
+  overflow: visible !important;
+  padding-right: 0 !important;
+}
